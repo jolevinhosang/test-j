@@ -1,0 +1,7 @@
+cypress/downloads
+cypress/screenshots
+cypress/reports
+cypress.env.json
+node_modules/
+package-lock.json
+package.json
