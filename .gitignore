@@ -3,4 +3,3 @@ cypress/screenshots
 cypress/reports
 cypress.env.json
 node_modules/
-package.json
