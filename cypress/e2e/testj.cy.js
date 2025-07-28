@@ -1,3 +1,5 @@
+// Test
+
 describe('Simple Cypress Test', () => {
   it('Visits the example site and checks navigation', () => {
     cy.visit('https://example.cypress.io')
