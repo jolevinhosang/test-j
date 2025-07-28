@@ -18,7 +18,7 @@ pipeline {
 
     stage('Install Dependencies') {
       steps {
-        bat 'npm ci' // make sure package-lock.json is committed
+        bat 'npm ci'
       }
     }
 
