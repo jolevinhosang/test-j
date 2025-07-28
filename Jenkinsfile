@@ -1,11 +1,6 @@
 pipeline {
   agent any
 
-  triggers {
-    // This enables automatic triggering for GitHub PRs
-    githubPullRequest()
-  }
-
   environment {
     CI = 'true'
   }
@@ -23,7 +18,7 @@ pipeline {
 
     stage('Install Dependencies') {
       steps {
-        bat 'npm ci' // ensure package-lock.json is committed
+        bat 'npm ci' // make sure package-lock.json is committed
       }
     }
 
@@ -37,7 +32,6 @@ pipeline {
   post {
     always {
       script {
-        // Optional: Print summary for visibility in logs
         echo "Build finished with status: ${currentBuild.currentResult}"
       }
     }
